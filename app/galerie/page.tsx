@@ -57,7 +57,7 @@ const galleryImages = [
     height: 400,
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-14%20at%2008.18.27%20(2)-M7Km8dFZhmmnJbGvouxeaK9aVRizuE.jpeg",
+    src: "https://i.imgur.com/O0dY5Jc.jpeg",
     alt: "Cozy waiting area with veterinary magazines and comfortable seating",
     width: 600,
     height: 400,
