@@ -38,7 +38,7 @@ export function Footer() {
           </div>
           <nav className="flex gap-8">
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              MENU
+              MENIU
             </a>
             <Link href="/contact" className="text-gray-600 hover:text-gray-900">
               CONTACT

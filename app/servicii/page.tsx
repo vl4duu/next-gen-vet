@@ -11,7 +11,7 @@ export default function ServicesPage() {
             Serviciile noastre
           </h1>
           <p className="text-2xl md:text-3xl text-[#2D3142] max-w-2xl">
-            Îngrijire de calitate pentru însoțitorii dvs. de animale iubiți.
+            Îngrijire de calitate pentru însoțitorii dvs. necuvântători.
           </p>
         </div>
 

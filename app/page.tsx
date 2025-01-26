@@ -3,13 +3,22 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Footer } from "@/components/footer"
 import ErrorBoundary from "@/components/error-boundary"
+import {Exo_2} from "next/font/google";
+
+// Configure the font
+const exoFont = Exo_2({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'], // Add needed weights
+  variable: '--font-exo2', // Set a CSS variable for easier customization
+});
+
 
 export default function Home() {
   return (
     <ErrorBoundary>
       <div className="flex flex-col min-h-screen">
         {/* Hero Section */}
-        <section className="relative min-h-[80vh] bg-gradient-to-b from-sky-400 to-white">
+        <section className="relative min-h-[60vh] bg-gradient-to-b from-sky-400 to-white">
           <div className="container mx-auto px-4 pt-24">
             <div className="relative">
               <Image
@@ -32,9 +41,12 @@ export default function Home() {
               />
             </div>
             <div className="text-center">
-              <h2 className="text-6xl font-extrabold text-[#4747FF] mb-8 font-inter tracking-wide text-shadow-lg opacity-90">
-                NEXT GEN VET
-              </h2>
+                <h2
+                    className={`text-6xl font-extrabold tracking-wide text-shadow-lg opacity-90 ${exoFont.className}`}
+                >
+                  <span className="text-black tracking-tighter">NEXTGEN</span>
+                  <span className="text-[#4747FF] tracking-tighter">VET</span>
+                </h2>
             </div>
           </div>
         </section>
@@ -108,7 +120,7 @@ export default function Home() {
               ></iframe>
             </div>
             <h2 className="text-2xl font-bold text-center mb-12">
-              Fă-ți o programare la animalul tău de companie și lasă-ne restul!
+              Fă-ți o programare la animalul tău de companie și ne ocupăm de restul!
             </h2>
             <div className="flex justify-center items-center gap-8">
               <Image
@@ -118,56 +130,7 @@ export default function Home() {
                 height={210}
                 className="rounded-lg"
               />
-              <div className="text-6xl font-bold">15K</div>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold text-center mb-12">
-              O echipă în care poți avea încredere pentru a-ți menține toate animalele de companie sănătoase.
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[1, 2].map((member) => (
-                <Card key={member} className="p-6">
-                  {member === 1 ? (
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ty3QvawwQSsCr4qGoIBOTA7VcbqBpR.png"
-                      alt="Dr. George Titi's business card with NextGenVet clinic details"
-                      width={600}
-                      height={400}
-                      className="w-full h-48 object-contain rounded-lg mb-4"
-                    />
-                  ) : (
-                    <Image
-                      src="/placeholder.svg"
-                      alt={`Team member ${member}`}
-                      width={200}
-                      height={200}
-                      className="w-full h-48 object-cover rounded-lg mb-4"
-                    />
-                  )}
-                  {member === 1 ? (
-                    <>
-                      <h3 className="text-xl font-semibold mb-2">Dr. George Titi</h3>
-                      <p className="text-gray-600">
-                        Medic Veterinar Principal, specializat în chirurgie și medicină internă, cu peste 10 ani de
-                        experiență în îngrijirea animalelor de companie.
-                      </p>
-                    </>
-                  ) : (
-                    <>
-                      <h3 className="text-xl font-semibold mb-2">Dr. Veterinar</h3>
-                      <p className="text-gray-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                      </p>
-                    </>
-                  )}
-                </Card>
-              ))}
+              <div className="text-5xl font-bold">Grijă cu inima deschisă pentru prietenii necuvântători!</div>
             </div>
           </div>
         </section>
