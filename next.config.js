@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   images: {
+    unoptimized: true,
     domains: ["maps.googleapis.com", "v0.blob.com", "hebbkx1anhila5yf.public.blob.vercel-storage.com"],
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
