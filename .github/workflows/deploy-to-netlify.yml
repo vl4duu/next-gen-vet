@@ -18,7 +18,6 @@ jobs:
       - name: Build and Export Static Files
         run: |
           npm run build
-          npm run export  # Export a static build to the 'out/' directory
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1
