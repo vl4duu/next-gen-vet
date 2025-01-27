@@ -6,28 +6,23 @@ on:
       - main  # Trigger deployment on the 'main' branch
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
+      
       - name: Install dependencies
-        run: npm install
-
-      - name: Build the project
+        run: npm install --legacy-peer-deps
+      
+      - name: Build and Export Static Files
         run: |
           npm run build
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1
-        env:                 # Set credentials as environment variables here
+        with:
+          publish-dir: out   # 'out' is the directory with static content
+          production-deploy: true
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        with:
-          publish-dir: out   # Specify the directory where static files are located
