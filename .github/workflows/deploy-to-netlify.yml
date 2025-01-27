@@ -3,7 +3,7 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - main  # Trigger deployment on the 'main' branch
+      - main
 
 jobs:
   deploy:
@@ -12,18 +12,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build and Export Static Files
-        run: |
-          npm run build
+      - name: Build site
+        run: npm run build
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         with:
-          publish-dir: out   # 'out' is the directory with static content
-          production-deploy: true
-          github-token: ${{ github.token  }}
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          args: deploy --dir=out --prod
