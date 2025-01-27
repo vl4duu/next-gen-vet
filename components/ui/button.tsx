@@ -103,22 +103,22 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         )
       }
 
-      return (
-          <Comp
-              className={cn(
-                  buttonVariants({variant, size, className}),
-                  "ml-auto",
-                  className?.includes("bg-orange-500") || className?.includes("bg-[#F4845F]")
-                      ? "text-white"
-                      : "text-orange-500",
-              )}
-              ref={ref as React.Ref<HTMLButtonElement>}
-              href={href}
-              {...props}
-          >
-            {children}
-          </Comp>
-      )
+        return (
+            <Comp
+                className={cn(
+                    buttonVariants({variant, size, className}),
+                    "ml-auto",
+                    className?.includes("bg-orange-500") || className?.includes("bg-[#F4845F]")
+                        ? "text-white"
+                        : "text-orange-500",
+                )}
+                ref={ref as React.Ref<HTMLButtonElement>}
+                {...(href ? {href} : {})}
+                {...props}
+            >
+                {children}
+            </Comp>
+        )
     },
 )
 Button.displayName = "Button"
