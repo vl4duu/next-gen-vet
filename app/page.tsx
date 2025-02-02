@@ -44,7 +44,7 @@ export default function Home() {
                 <h2
                     className={`text-6xl font-extrabold tracking-wide text-shadow-lg opacity-90 ${exoFont.className}`}
                 >
-                  <span className="text-black tracking-tighter">NEXTGEN</span>
+                  <span className="text-black tracking-tighter">NEXT GEN </span>
                   <span className="text-[#4747FF] tracking-tighter">VET</span>
                 </h2>
             </div>
@@ -54,8 +54,8 @@ export default function Home() {
         {/* Services Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-              NextGen Vet este o clinică veterinară modernă, deschisă în 2022. Oferim o gamă completă de servicii
+            <p className="text-center text-gray-600 text-xl max-w-3xl mx-auto mb-16">
+              Next Gen Vet este o clinică veterinară modernă, deschisă în 2024. Oferim o gamă completă de servicii
               medicale pentru animalele de companie, combinând expertiza profesională cu tehnologia de ultimă generație
               pentru a asigura cea mai bună îngrijire pentru prietenii voștri necuvântători.
             </p>
@@ -77,8 +77,8 @@ export default function Home() {
 
               <Card className="p-6 relative overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QT1923rB83d1UXSkgYoZGPAU6KPTZh.png"
-                  alt="Pet shop shelves stocked with Royal Canin pet food products"
+                  src="pet-food-cropped.png"
+                  alt="Pet shop shelves stocked with Virbac Canin pet food products"
                   width={300}
                   height={200}
                   className="w-full h-48 object-cover rounded-lg mb-4"
@@ -119,18 +119,9 @@ export default function Home() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <h2 className="text-2xl font-bold text-center mb-12">
-              Fă-ți o programare la animalul tău de companie și ne ocupăm de restul!
-            </h2>
             <div className="flex justify-center items-center gap-8">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/brown_doggo_transparent-2j8uG3Fta7KMCtGuaqC7YmF9pfvjNn.png"
-                alt="Cartoon illustration of a friendly brown dog in a doctor's coat"
-                width={210}
-                height={210}
-                className="rounded-lg"
-              />
-              <div className="text-5xl font-bold">Grijă cu inima deschisă pentru prietenii necuvântători!</div>
+              <div className="text-4xl font-bold">Fă-ți o programare câinelui tău sau pisicii tale de companie.
+              </div>
             </div>
           </div>
         </section>
