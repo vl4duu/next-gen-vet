@@ -5,7 +5,6 @@ import { Suspense } from "react"
 import Loading from "./loading"
 
 import { MainNav } from "@/components/main-nav"
-import { MobileNav } from "@/components/mobile-nav"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,6 +20,10 @@ const inter = Inter({
 export const metadata = {
   title: "NextGen Vet - Clinică Veterinară",
   description: "Clinică Veterinară NextGenVet",
+  icons: {
+    icon: "favicon.png",
+  },
+
 }
 
 export default function RootLayout({
@@ -32,7 +35,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`relative flex min-h-screen flex-col ${poppins.variable} ${inter.variable} font-poppins`}>
         <MainNav />
-        <MobileNav />
         <Suspense fallback={<Loading />}>
           <main className="flex-1">{children}</main>
         </Suspense>
