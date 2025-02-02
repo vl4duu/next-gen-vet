@@ -120,7 +120,7 @@ export default function Home() {
               ></iframe>
             </div>
             <div className="flex justify-center items-center gap-8">
-              <div className="text-4xl font-bold">Fă-ți o programare câinelui tău sau pisicii tale de companie.
+              <div className="text-4xl font-bold">Fă-i o programare câinelui sau pisicii tale de companie.
               </div>
             </div>
           </div>
