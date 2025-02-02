@@ -15,7 +15,7 @@ export default function ContactPage() {
             <h2 className="font-semibold mb-4">Program</h2>
             <div className="flex flex-col items-center">
               <p>Luni - Vineri: 09:00 - 20:00</p>
-              <p>Sambata: 09:00 - 16:00</p>
+              <p>Sambata: 10:00 - 16:00</p>
               <p>Duminica: Închis</p>
             </div>
           </div>
