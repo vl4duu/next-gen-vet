@@ -113,7 +113,7 @@ export default function GalleryPage() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <h2 className="text-xl md:text-2xl font-bold">
-                  Protejați sănătatea animalului dvs. de companie.
+                  Asigurați sănătatea și fericirea pisicii sau câinelui dvs.
                 </h2>
               </div>
               <Button
