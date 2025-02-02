@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="mb-4 md:mb-0">
-            <h3 className="text-xl font-bold mb-4">NextGen Vet</h3>
+            <h3 className="text-xl font-bold mb-4">Next Gen Vet</h3>
             <div className="flex flex-col space-y-2">
               <a href="tel:0774508694" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
                 <Phone className="h-4 w-4" />
@@ -36,7 +36,7 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <nav className="flex gap-8">
+          <nav className="flex gap-8 mr-4">
             <a href="#" className="text-gray-600 hover:text-gray-900">
               MENIU
             </a>
@@ -74,4 +74,3 @@ export function Footer() {
     </footer>
   )
 }
-

@@ -23,7 +23,12 @@ export function MobileNav() {
     return (
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-                <Button variant="outline" className="md:hidden" onClick={() => setOpen(true)}>
+                <Button variant="outline" className="md:hidden" onClick={(e) => {
+                    e.preventDefault(); // Prevent default navigation behavior
+                    e.stopPropagation(); // Stop click from propagating further
+                    setOpen(true);       // Open the mobile navigation
+                }}
+                >
                     <span className="sr-only">Toggle menu</span>
                     <svg
                         className="h-6 w-6"
@@ -60,9 +65,12 @@ export function MobileNav() {
                     <Button
                         variant="default"
                         className="mt-4 bg-[#2D3142] hover:bg-[#2D3142]/90"
+                        asChild
                     >
-                        <Phone className="mr-2 h-4 w-4"/>
-                        Sună-ne
+                        <a href="tel:0774508694">
+                            <Phone className="mr-2 h-4 w-4"/>
+                            Sună-ne
+                        </a>
                     </Button>
                 </div>
             </SheetContent>

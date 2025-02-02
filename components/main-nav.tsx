@@ -41,9 +41,13 @@ export function MainNav() {
                         </nav>
                     </div>
                     <div className="flex items-center">
-                        <Button variant="default" className="hidden bg-white text-[#2D3142] hover:bg-white/90 md:flex">
-                            <Phone className="mr-2 h-4 w-4"/>
-                            Sună-ne
+                        <Button variant="default" className="hidden bg-white text-[#2D3142] hover:bg-white/90 md:flex"
+                                asChild
+                        >
+                            <a href="tel:0774508694">
+                                <Phone className="mr-2 h-4 w-4"/>
+                                Sună-ne
+                            </a>
                         </Button>
                         <MobileNav/>
                     </div>
