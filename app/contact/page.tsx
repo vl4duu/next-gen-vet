@@ -29,7 +29,7 @@ export default function ContactPage() {
 
           <div className="flex-1 md:max-w-[250px]">
             <h2 className="font-semibold mb-4">Adresa</h2>
-            <p>Strada Fabricii 38</p>
+            <p>Strada Fabrica de Chibrituri 50</p>
             <p>Bucuresti</p>
             <p className="mt-4">
               <a href="tel:+40774508694" className="text-orange-500 hover:text-orange-600">
