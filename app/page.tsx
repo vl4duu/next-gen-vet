@@ -18,7 +18,7 @@ export default function Home() {
     <ErrorBoundary>
       <div className="flex flex-col min-h-screen">
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] bg-gradient-to-b from-sky-400 to-white">
+        <section className="relative min-h-[60vh] bg-gradient-to-b from-sky-400 to-transparent">
           <div className="container mx-auto px-4 pt-24">
             <div className="relative">
               <Image
@@ -107,7 +107,7 @@ export default function Home() {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="mb-12 w-full relative overflow-hidden rounded-lg">
               <iframe
