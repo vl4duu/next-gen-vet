@@ -1,9 +1,5 @@
 name: Deploy to Netlify
 
-publish: out
-environment:
-    NETLIFY_NEXT_PLUGIN_SKIP: true
-
 on:
   push:
     branches:
