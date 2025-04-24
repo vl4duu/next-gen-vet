@@ -30,25 +30,6 @@ export default function ServicesPage() {
                 </div>
 
 
-                {/* Footer CTA */}
-                <div className="bg-white rounded-3xl p-8 shadow-lg">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div className="flex items-center gap-4">
-                            <div className="bg-[#2D3142] text-white px-4 py-2 rounded-lg text-sm">
-                                Next Gen Vet
-
-                            </div>
-                            <h2 className="text-xl md:text-2xl font-bold text-[#2D3142]">
-                                Asigurați sănătatea și fericirea pisicii sau câinelui dvs.
-                            </h2>
-                        </div>
-                        <Button
-                            className="bg-[#F4845F] hover:bg-[#F4845F]/90 text-white px-8"
-                        >
-                            Contact
-                        </Button>
-                    </div>
-                </div>
             </div>
             <Footer/>
         </div>
