@@ -121,6 +121,10 @@ export default function Home() {
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </div>
+                        <div className="flex justify-center items-center gap-8">
+                            <div className="text-4xl font-bold">Fă-i o programare câinelui sau pisicii tale.
+                            </div>
+                        </div>
                     </div>
                 </section>
 
