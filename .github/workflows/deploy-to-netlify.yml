@@ -23,11 +23,14 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          NETLIFY_NEXT_PLUGIN_SKIP: "true"
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_NEXT_PLUGIN_SKIP: "true"
         with:
           args: deploy --dir=out --prod
