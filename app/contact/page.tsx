@@ -1,6 +1,7 @@
 "use client"
 
 import { Footer } from "@/components/footer"
+import { Instagram } from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -36,6 +37,21 @@ export default function ContactPage() {
                 +40 774 508 694
               </a>
             </p>
+          </div>
+
+          <div className="flex-1 md:max-w-[250px]">
+            <h2 className="font-semibold mb-4">Instagram</h2>
+            <a
+              href="https://www.instagram.com/nextgenvetmedical/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram @nextgenvetmedical"
+              className="inline-flex items-center justify-center md:justify-start gap-2 text-orange-500 hover:text-orange-600 break-all"
+              title="@nextgenvetmedical"
+            >
+              <Instagram className="h-4 w-4" />
+              <span>nextgenvetmedical</span>
+            </a>
           </div>
         </div>
 
